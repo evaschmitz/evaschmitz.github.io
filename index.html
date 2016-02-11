@@ -4,24 +4,35 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    <!--
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-     -->
-  </ul>
   {% capture over_page %}{% include over.md %}{% endcapture %}
-  {{ over_page | markdownify }}
-
+  {% capture tools_page %}{% include tools.md %}{% endcapture %}
+  {% capture werkwijze_page %}{% include werkwijze.md %}{% endcapture %}
+  <section id="over">
+    <div class="col">
+      <img src="img/haring.jpg">
+    </div>
+    <div class="col">
+      {{ over_page | markdownify }}
+    </div>
+  </section>
+  <hr>
+  <section id="toolkit">
+    <div class="col">
+      {{ tools_page | markdownify }}
+    </div>
+    <div class="col">
+      <img src="img/oplossing.jpg">
+    </div>
+  </section>
+  <hr>
+  <section id="werkwijze">
+    <div class="col">
+      <img src="img/succes.jpg">
+    </div>
+    <div class="col">
+      {{ werkwijze_page | markdownify }}
+    </div>
+  </section>
   <a class="back-to-top" href="#" title="Terug naar boven">Terug naar boven</a>
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 

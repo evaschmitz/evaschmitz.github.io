@@ -7,14 +7,17 @@
 
 # Site settings
 title: UserInsights
-email: your-email@domain.com
+address: >
+  Straat<br>
+  5100AA Groningen
+email: info@userinsights.nl
+phone: <a href="tel:+31642131443">+31 (0)6 4213 1443</a>
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  UserInsights biedt inzichten in doelgroepen met behulp
+  van verschillende doelgroeponderzoeken en heeft jaren ervaring
+  met het neerzetten van kwalitatief onderzoek.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://evaschmitz.github.io" # the base hostname & protocol for your site
-github_username:  evaschmitz
 brand_name: User<span>Insights</span>
 
 # Build settings

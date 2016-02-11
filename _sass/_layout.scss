@@ -42,6 +42,24 @@
         display: none;
     }
 
+    ul {
+      list-style: none none outside;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+
+        &.active a, &:hover a {
+          border-bottom: 2px solid $brand-color-base;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -110,7 +128,58 @@
     }
 }
 
+.jumbotron {
+  background: #dfdfdf url("../img/jumbo.jpg") no-repeat 0 60%;
+  background-size: cover;
+  padding: 120px 60px;
+  margin-bottom: 20px;
 
+  h1, p {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  .brand {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+hr {
+  border-top: 1px solid #fefefe;
+  margin: 0 auto;
+  width: 40%;
+}
+
+section {
+  padding: 40px 0;
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  width: 50%;
+  float: left;
+}
 
 /**
  * Site footer
@@ -190,9 +259,9 @@
  * Page content
  */
 .page-content {
-    background: #fdfdfd;
-    padding: 86px 0 $spacing-unit;
-    margin-bottom: 240px;
+    background: #fff;
+    padding: 56px 0 $spacing-unit;
+    margin-bottom: 220px;
     position: relative;
     border-bottom: 1px solid $grey-color-light;
     z-index: 3;

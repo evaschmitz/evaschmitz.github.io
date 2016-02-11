@@ -3,11 +3,15 @@
 
   {% include head.html %}
 
-  <body>
+  <body id="home" data-spy="scroll" data-target="#navbar" data-offset="56">
 
     {% include header.html %}
 
     <div class="page-content">
+      <section class="jumbotron">
+        <h1><span class="brand">User<span>Insights</span></span> geeft inzicht in het gedrag, behoefte en gebruik van uw doelgroep</h1>
+        <p class="intro">Wij bieden inzichten in doelgroepen met behulp van verschillende doelgroeponderzoeken.</p>
+      </section>
       <div class="wrapper">
         {{ content }}
       </div>
@@ -16,5 +20,6 @@
     {% include footer.html %}
 
   </body>
-
+  <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="js/scrollspy.js"></script>
 </html>
